@@ -1,52 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Navigation Example</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <title>Polysoft - Help</title>
+  <link rel="import" href="objects.html">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Website Titlesss</h1>
+    <h1>Polysoft</h1>
   </header>
   
   <nav class="navigation">
     <ul>
-      <li><a href="#section1">Section 1</a></li>
-      <li><a href="#section2">Section 2</a></li>
-      <li><a href="#section3">Section 3</a></li>
+      <li><a href="#section1"><i class="material-icons-outlined">person</i> Section 1</a></li>
+      <li><a href="#section2"><i class="material-icons-outlined">person</i> Section 2</a></li>
+      <li><a href="#section3"><i class="material-icons-outlined">person</i> Section 3</a></li>
     </ul>
   </nav>
   
   <main>
     <section id="section1">
-        <h2>Section 1</h2>
-        <img src="imgs/flow1.jpg" alt="Flow 1" width="512">
-        <p>This is the content of section 1.</p>
+      <h2>Commandes</h2>
       
         <section>
-          <h3>Subsection 1.1</h3>
-          <img src="imgs/flow1.jpg" alt="Flow 1" width="512">
-          <p>This is the content of subsection 1.1.</p>
+          <h3>1. Ajouter nouvelle commande</h3> 
+          <p>Pour ajouter une nouvelle commande, </p>
+          
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i> accédez à la page <i>Commandes</i> dans le menu <i class="material-icons-outlined">menu</i> et cliquez sur (<b><i class="material-icons">note_add</i> Nouvelle commande</b>) en haut à gauche:</p>
+          <img src="imgs/NewOrder_1.png" alt="NewOrder_1" width="612">
+          <p>Dans la page (<b><i class="material-icons">note_add</i> Nouvelle commande</b>), au moins un produit doit être ajouté à <span class="dashed_underline" >la liste</span> pour que la commande puisse être sauvegardée.</p>
+          <img src="imgs/NewOrder_2.png" alt="NewOrder_2" width="612">
+          <p>Un <span class="field1">Bon Nº</span> sera automatiquement ajouté suivant le dernier numéro enregistré. Il peut être modifié manuellement si nécessaire.</p>
         </section>
       
         <section>
-          <h3>Subsection 1.2</h3>
-          <img src="imgs/subflow2.jpg" alt="Subflow 2" width="512">
-          <p>This is the content of subsection 1.2.</p>
+          <h4>Etape 1 - Sélectionner client</h4>
+          <p>Dans Polysoft, un client peut être de 2 types: </p>
+          <ul>
+            <li>Un <span class="bold1">client individuel</span> <i class="material-icons-outlined" style="color: rgb(254, 222, 127);">person</i> qui passe une commande en son nom, ou</li>
+            <li>Une <span class="bold1">société</span> <i class="material-icons-outlined"style="color: rgb(254, 222, 127);">domain</i></li>
+          </ul>
+
+        <p>Pour les clients individuels, leur nom complet est affiché pour représenter leur compte. (Voir <a href="#section1">comment créer un client individuel</a> pour plus de détails).</p>
+
+        <p>Pour les sociétés, c'est un peu différent:</p>
+
+        <p>Pour qu'une société soit sauvegardée, il faut <span class="underline1">une seule personne liée au compte de la société en tant que point de contact</span>. (Voir <a href="#section1">comment créer une société</a> pour plus de détails).</p>
+        </p>
+
+        
+        <p>Dans la selection des clients, à la fois les clients individuels<i class="material-icons-outlined">person</i> et les sociétés <i class="material-icons-outlined">domain</i> seront affichés dans la même liste.</p>
+        <p>L'icône (<i class="material-icons-outlined">person</i>,<i class="material-icons-outlined">domain</i>) avant le nom indique s'il s'agit d'une société ou d'un client individuel.</p>
+
+        <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>Cliquez sur le champ <span class="field1">Client</span> pour choisir un client dans la liste.</p>
+
+        <img src="imgs/NewOrder_3.png" alt="NewOrder_3" width="612">
+
+        <p>Les sociétés auront leur nom de Point de Contact affiché en jaune. Dans ce cas, la société <span style="color:white; font-weight: bold;"><i class="material-icons-outlined" >domain</i> ExampleTex</p></span> a son point de contact <span style="color: #ce9468;">Abdessamad 001</span> en jaune</p>
+
+        <img src="imgs/NewOrder_4.png" alt="NewOrder_4" width="612">
+
         </section>
-      
         <section>
-          <h3>Subsection 1.3</h3>
-          <img src="imgs/subflow3.jpg" alt="Subflow 3" width="512">
-          <p>This is the content of subsection 1.3.</p>
+          <h4>Etape 2 - Ajouter articles</h4>
+          <p> <span class="dashed_underline">La zone en tirets jaunes</span> est la sélection de catégorie. </p>
+          
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i> Sélectionnez une catégorie (par example <span class="chipBtn"><i class="material-icons-outlined" style="color: #ffffff; font-size:13px; top: 2px;">check</i> Fil Polyester</span>)</p>
+
+          <img src="imgs/NewOrder_5.png" alt="NewOrder_5" width="612">
+            
+          <p>Pour afficher les articles sur la liste, il faut sélectionner la catégorie associée. Ici, la catégorie <span class="chipBtn"><i class="material-icons-outlined" style="color: #ffffff; font-size:13px; top: 2px;">check</i> Visline - 7g avec Colle (rose)</span> est sélectionnée et le produit associé apparaît sur la liste</p> 
+
+          <img src="imgs/NewOrder_6.png" alt="NewOrder_6" width="612">
+
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>Ajoutez un article et taper une quantité.</p>
+
+          <p>Dans cet example, 8003 est sélectionné avec une quantité de 12 unités. Le bouton <span class="addBtn">Ajouter</span> est activé pour ajouter la commande à la liste.</p>
+          
+          <img src="imgs/NewOrder_7.png" alt="NewOrder_7" width="612">
+          
+          <p>Dans le même example, on ajoute 1 unité de <span class="field1">Fil canette</span> et 3 unités de <span class="field1"> Visline - sans colle (vert)</span> </p> 
+          
+          <img src="imgs/NewOrder_8.png" alt="NewOrder_8" width="612">
+          
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>Pour supprimer un article de la liste, cliquez sur le button <i class="material-icons-outlined" style="color: rgb(239, 239, 239);">delete</i>.</p>
+          
+          <img src="imgs/NewOrder_9.png" alt="NewOrder_9" width="612">
+          
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i> Pour ajouter ou retirer la T.V.A, cliquez sur le bouton T.V.A.</p>
+          
+          <img src="imgs/NewOrder_10.png" alt="NewOrder_10" width="612">
+          
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i> Appuyez sur <span class="saveBtn">Enregistrer</span> pour sauvegarder la commande.</p>
         </section>
       </section>
-      
+
     
     <section id="section2">
-      <h2>Section 2</h2>
-      <img src="imgs/flow2.jpg" alt="Flow 2" width="512">
-      <p>This is the content of section 2.</p>
+      <h2>Clients</h2>
+      <p>Pour ajouter un nouveau <i class="material-icons-outlined" style="color: rgb(254, 222, 127);">person</i> <span class="bold1">client</span>,</p>
+      <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i> Allez à la page <b>Clients</b> dans le menu <i class="material-icons-outlined">menu</i> et sélectionnez (<b><i class="material-icons-outlined">person_add</i> Nouveau client</b>) en haut à gauche:</p>
+
+          <img src="imgs/NewCustomer_1.png" alt="NewCustomer_1" width="612">
+          <p> <i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>Ajoutez le <span class="field1">Nom</span> et <span class="field1">Prénom</span> du client</p>
+
+          <p>Dans la page <b><i class="material-icons-outlined">person_add</i> Nouveau client</b>, il est recommandé d’entrer autant de détails que possible pour éviter les doublons de clients. Cependant, seul le <span class="field1">Prénom</span> est requis pour créer un nouveau client.</p>
+
+          <p>Lorsque vous entrez le <span class="field1">Prénom</span> uniquement dans le champs et cliquez sur <span class="saveBtn">Enregistrer</span>, un message apparaîtra qu’un numéro, dans ce cas “002”, sera automatiquement généré comme <span class="field1">Nom</span> du client.</p>
+          <p>Ce client sera enregistré sous le nom <span class="field1">Amine 002</span> car il y a déjà un <span class="field1">Amine 001</span> dans la liste des clients.</p>
+
+          <img src="imgs/NewCustomer_2.png" alt="NewCustomer_2" width="612">
+
+          <p>C’est pourquoi il est préférable d’ajouter un <span class="field1">Nom</span> et un <span class="field1">Prénom</span> pour identifier le client.</p>
+
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>Ajoutez l'adresse de livraison du client dans le cas necessaire</p>
+          
+          <img src="imgs/NewCustomer_4.png" alt="NewCustomer_4" width="612">
+          <p>Dans le cas ou vous devez ajouter une nouvelle adresse, cliquez sur <i class="material-icons">add_circle</i> dans le champ d’adresse </p>
+
+            <img src="imgs/NewCustomer_5.png" alt="NewCustomer_5" width="612">
+
+            <p>Vous serez redirigé vers la page <b><i class="material-icons-outlined">import_contacts</i> Nouvelle adresse</b>. Entrez les informations nécessaires et cliquez sur <span class="saveBtn">Enregistrer</span>.</p>
+             
+            <p>Voir <a href="#section1">ajout et modification d’adresses</a> pour plus d'information.</p>
+
+            <img src="imgs/NewAddress_1.png" alt="NewAddress_1" width="612">
+            
+            <p></p>
+            L’adresse peut être sélectionnée le "Code Postal" et la "Ville" seront automatiquement remplis en fonction de l’adresse sélectionnée. [ NouveauClient_6]\n\n Avec toutes les informations de contact remplies, cliquez sur "Enregistrer" dans l’écran "Nouveau client"</p> 
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>Pour ajouter plus d’informations sur le nouveau client telles que le <span class="field1">Numéro de téléphone</span>, ou <span class="field1">Email</span>, vous pouvez les activer et les saisir dans le formulaire.</p>
+
+          <img src="imgs/NewCustomer_3.png" alt="NewCustomer_3" width="612">
+
+          <p><i class="material-icons-outlined" style="color: #ef35d3;">bolt</i>
+          <p></p>
     </section>
     
     <section id="section3">

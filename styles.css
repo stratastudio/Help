@@ -2,23 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1b1b1b;
+    color: #ededed;
   }
   
   header {
-    background-color: #f2f2f2;
+    background-color: #342681;
     padding: 10px;
     position: sticky;
     top: 0;
     z-index: 1;
   }
+  main{
+    margin-right: 350px;
+  }
   
   .navigation {
     position: fixed;
     top: 100px;
-    right: 0px; 
+    right: 0px;
     overflow-y: auto;
-    background-color: #f9f9f9;
-    padding: 10px;
+    background-color: #385fc3;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
     box-sizing: border-box;
     z-index: 1;
   }
@@ -46,4 +53,66 @@ body {
     margin-left: 50px;
     padding: 20px;
   }
-  
+
+  .material-icons {
+    position: relative;
+    top: 4px;
+  }  
+  .material-icons-outlined {
+    position: relative;
+    top: 4px;
+  }  
+  .bold1 {
+    color: rgb(254, 222, 127);
+    font-weight: bold;
+  }  
+  .field1 {
+    color: #e8a2ad;
+  }
+  .underline1 {
+    font-weight: bold;
+    text-decoration: underline;
+  }  
+  .dashed_underline {
+    text-decoration: underline dashed;
+    color: #efaa50;
+  }
+  a {
+    color: rgb(67, 123, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .saveBtn {
+    color: #ebebeb;
+    background-color: #004689;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    font-size: small;
+  }
+  .chipBtn {
+    color: #ebebeb;
+    background-color: #2b3880;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+    font-size: small;
+  }
+  .addBtn {
+    color: #681a30;
+    background-color: #f2a5b2;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+    font-size: small;
+  }
+  h4{
+    color: #00c25b;
+    text-decoration: underline;
+  }
